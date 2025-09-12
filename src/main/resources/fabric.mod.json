@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "skylanders",
+	"version": "${version}",
+	"name": "Skylanders Crafted",
+	"description": "Skylanders in Minecraft!",
+	"authors": [
+		"AtheAnt"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/skylanders/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"atheant.skylanders.SkylandersCrafted"
+		],
+		"fabric-datagen": [
+			"atheant.skylanders.SkylandersCraftedDataGenerator"
+		],
+		"client": [
+			"atheant.skylanders.SkylandersCraftedClient"
+		]
+	},
+	"mixins": [
+		"skylanders.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
