@@ -1,5 +1,9 @@
 {
   "item.skylanders.portelium_shard" : "Portelium Shard",
 
-  "item.skylanders.portelium_shard_block" : "Block of Portelium Shards"
+  "block.skylanders.portelium_shard_block" : "Block of Portelium Shards",
+  "item.skylanders.portelium_shard_block" : "Block of Portelium Shards",
+
+
+  "itemGroup.portelium_ingredients" : "Portelium Ingredients"
 }

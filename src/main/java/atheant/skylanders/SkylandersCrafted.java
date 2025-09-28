@@ -1,6 +1,7 @@
 package atheant.skylanders;
 
 import atheant.skylanders.init.BlocksInit;
+import atheant.skylanders.init.ItemGroupsInit;
 import atheant.skylanders.init.ItemsInit;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +16,7 @@ public class SkylandersCrafted implements ModInitializer {
 	public void onInitialize() {
 		ItemsInit.initialize();
 		BlocksInit.initialize();
+
+		ItemGroupsInit.initialize();
 	}
 }

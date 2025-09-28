@@ -18,14 +18,10 @@ import java.util.function.Function;
 
 public class BlocksInit {
 
-    //region Helper Method & Initializing
+    //region Helper Methods & Initializing
     // Initialize
     public static void initialize() {
         SkylandersCrafted.LOGGER.info("Initializing Blocks for " + SkylandersCrafted.MOD_ID);
-
-        //TODO: Remove from here & add to custom Item Group Later
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
-                .register((itemGroup) -> itemGroup.add(PORTELIUM_SHARD_BLOCK));
     }
 
     // Helper Methods

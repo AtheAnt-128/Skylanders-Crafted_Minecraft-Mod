@@ -14,17 +14,13 @@ import java.util.function.Function;
 
 public class ItemsInit {
 
-    //region Helper Method & Initializing
+    //region Helper Methods & Initializing
     // Initialize
     public static void initialize() {
         SkylandersCrafted.LOGGER.info("Initializing Items for " + SkylandersCrafted.MOD_ID);
-
-        //TODO: Remove from here & add to custom Item Group Later
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-                .register((itemGroup) -> itemGroup.add(PORTELIUM_SHARD));
     }
 
-    // Helper Method
+    // Helper Methods
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create Item Key
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SkylandersCrafted.MOD_ID, name));
